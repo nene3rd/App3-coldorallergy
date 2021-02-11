@@ -55,6 +55,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var allergyPercent = allegry_count/4 * 100;
 		var resultText = document.getElementById ("results");
 		resultText.innerHTML = "Probability it is allergies = " + allergyPercent + "%" + "<br> Probability it is cold = " + coldPercent + "%";
+	};
   </script>
 
 
@@ -101,7 +102,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p>
+        <p>Are your eyes watery or itchy?!</p>
 		<a href="#two" onclick="allergyAdd();"class="w3-btn w3-black"> Yes</a>
 		<a href="#two" onclick="coldAdd();"class="w3-btn w3-black"> No</a>	
     	</div><!--content-->
@@ -143,18 +144,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	</div><!--content--> 
 	<--Results Page-->
 </div> 
-
+<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Get Results!</h1>
+	</div>
 	
-	
-	<div class="content" id="five">
-	<div class="w3-container w3-flat carrot">
-		<h1>Results<h1>
-	</div> 
-		
-	<div id="content" class- "w3-container">
-		<p>Click the button below to display results!<p>
-		<a onclick="displayResults();" class="w3-btn w3-black">
-			<p id ="results"> </p>
+	<div id="content" class="w3-container">
+		<a  onclick="displayResults();"class="w3-btn w3-black"> Yes</a> 
+		<p id="results"></p>
+	</div>
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
 </footer>
